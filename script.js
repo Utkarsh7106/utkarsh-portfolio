@@ -1,36 +1,32 @@
-  // Theme toggle
-  const toggle = document.getElementById('themeToggle');
-  const html = document.documentElement;
-  const saved = localStorage.getItem('theme') || 'light';
-  html.setAttribute('data-theme', saved);
+// Dark mode toggle
+const btn = document.getElementById('themeBtn');
+const body = document.body;
 
-  toggle.addEventListener('click', () => {
-    const current = html.getAttribute('data-theme');
-    const next = current === 'light' ? 'dark' : 'light';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
+// Load saved preference
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark');
+  btn.textContent = 'Light Mode';
+}
+
+btn.addEventListener('click', () => {
+  body.classList.toggle('dark');
+  const isDark = body.classList.contains('dark');
+  btn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-inner ul a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    if (window.scrollY >= section.offsetTop - 80) {
+      current = section.getAttribute('id');
+    }
   });
-
-  // Nav scroll
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  navLinks.forEach(link => {
+    link.style.color = link.getAttribute('href') === '#' + current ? '#ffffff' : '#cccccc';
   });
-
-  // Scroll reveal
-  const reveals = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.1 });
-  reveals.forEach(el => io.observe(el));
-
-  // Progress bar animation
-  const progFills = document.querySelectorAll('.prog-fill');
-  const progIO = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('animate'); progIO.unobserve(e.target); }
-    });
-  }, { threshold: 0.3 });
-  progFills.forEach(el => progIO.observe(el));
+});

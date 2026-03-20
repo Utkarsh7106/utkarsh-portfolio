@@ -1,338 +1,209 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Utkarsh Mishra — Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utkarsh Mishra</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <div class="nav-logo">U.M.</div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="nav-right">
-    <div class="theme-toggle" id="themeToggle">
-      <span class="toggle-icon">☀️</span>
-      <div class="toggle-track"><div class="toggle-thumb"></div></div>
-      <span class="toggle-icon">🌙</span>
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-name">Utkarsh Mishra</span>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeBtn">Dark Mode</button>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Final Year · Computer Engineering</p>
-    <h1 class="hero-name">
-      <span class="first">Utkarsh</span>
-      <span class="last">Mishra</span>
-    </h1>
-    <p class="hero-title">
-      Python Full Stack Developer
-      <span class="title-dot">·</span>
-      Engineering Student
-    </p>
-    <p class="hero-location">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-      Mumbai, India · Ramrao Adik Institute of Technology
-    </p>
-    <p class="hero-desc">
-      Computer Engineering student with hands-on experience in Python, SQL, and web development — building data-driven projects and leading technical initiatives on campus.
-    </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-main">View Projects</a>
-      <a href="#contact" class="btn-outline">Get in Touch</a>
-    </div>
-  </div>
-
-  <div class="hero-right">
-    <div class="photo-frame">
-      <!-- Replace the div below with <img src="your-photo.jpg" alt="Utkarsh Mishra"> when ready -->
-      <div class="photo-inner">
-        <img src="Utkarsh_Image.jpeg" alt="Utkarsh Mishra">
-      </div>
-      <div class="photo-badge">
-        <strong>7.8</strong>
-        CGPA · B.Tech CSE
+  <section id="hero">
+    <div class="hero-text">
+      <p class="hero-tag">Final Year · Computer Engineering · RAIT, Navi Mumbai</p>
+      <h1>Utkarsh Mishra</h1>
+      <p class="hero-sub">Python Full Stack Developer &nbsp;|&nbsp; Engineering Student</p>
+      <p class="hero-location">📍 Mumbai, India</p>
+      <p class="hero-desc">Computer Engineering student with hands-on experience in Python, SQL, and web development. Currently training in Python Full Stack at QSpiders. I build data-driven projects and have experience presenting technical concepts to audiences of 400+.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee-strip">
-  <div class="marquee-track">
-    <div class="marquee-item">Python Full Stack</div>
-    <div class="marquee-item">Oracle SQL</div>
-    <div class="marquee-item">Data Analysis</div>
-    <div class="marquee-item">Machine Learning</div>
-    <div class="marquee-item">Flask</div>
-    <div class="marquee-item">ISTE RAIT</div>
-    <div class="marquee-item">QSpiders Intern</div>
-    <div class="marquee-item">TECHNOVATE 2025</div>
-    <div class="marquee-item">Minor · Data Science</div>
-    <div class="marquee-item">AWS Cloud</div>
-    <!-- dupe -->
-    <div class="marquee-item">Python Full Stack</div>
-    <div class="marquee-item">Oracle SQL</div>
-    <div class="marquee-item">Data Analysis</div>
-    <div class="marquee-item">Machine Learning</div>
-    <div class="marquee-item">Flask</div>
-    <div class="marquee-item">ISTE RAIT</div>
-    <div class="marquee-item">QSpiders Intern</div>
-    <div class="marquee-item">TECHNOVATE 2025</div>
-    <div class="marquee-item">Minor · Data Science</div>
-    <div class="marquee-item">AWS Cloud</div>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-body reveal">
-    <div class="section-tag">About Me</div>
-    <h2 class="section-title">Turning <em>data</em> into decisions, code into products</h2>
-    <p>Computer Engineering student at RAIT, Navi Mumbai with a minor in Data Science. I build data-driven projects and have hands-on experience across Python, SQL, and web development — currently training in Python Full Stack at QSpiders.</p>
-    <p>Beyond code, I lead as Event Managing Head at ISTE RAIT, having addressed 400+ students, organized technical workshops, and coordinated large-scale campus events end-to-end.</p>
-    <div class="about-meta">
-      <div class="meta-row"><span class="meta-label">College</span><span class="meta-val">Ramrao Adik Institute of Technology</span></div>
-      <div class="meta-row"><span class="meta-label">Degree</span><span class="meta-val">B.Tech CSE + Minor in Data Science</span></div>
-      <div class="meta-row"><span class="meta-label">Location</span><span class="meta-val">Navi Mumbai, India</span></div>
-      <div class="meta-row"><span class="meta-label">Email</span><span class="meta-val"><a href="mailto:utkarshmishra7106@gmail.com">utkarshmishra7106@gmail.com</a></span></div>
-      <div class="meta-row"><span class="meta-label">LinkedIn</span><span class="meta-val"><a href="https://linkedin.com/in/utkarshmishra7106" target="_blank">utkarshmishra7106</a></span></div>
-      <div class="meta-row"><span class="meta-label">GitHub</span><span class="meta-val"><a href="https://github.com/UtkarshMishra7106" target="_blank">UtkarshMishra7106</a></span></div>
+    <div class="hero-photo">
+      <img src="Utkarsh_Image.jpeg" alt="Utkarsh Mishra">
     </div>
-  </div>
+  </section>
 
-  <div class="about-stats reveal reveal-d1">
-    <div class="stat-row">
-      <div class="stat-num">7.8</div>
-      <div class="stat-info"><div class="stat-name">CGPA</div><div class="stat-sub">B.Tech Computer Engineering</div></div>
-    </div>
-    <div class="stat-row">
-      <div class="stat-num">400+</div>
-      <div class="stat-info"><div class="stat-name">Students Addressed</div><div class="stat-sub">ISTE RAIT Campus Event</div></div>
-    </div>
-    <div class="stat-row">
-      <div class="stat-num">40+</div>
-      <div class="stat-info"><div class="stat-name">Workshop Participants</div><div class="stat-sub">Python & SQL Workshops</div></div>
-    </div>
-    <div class="stat-row">
-      <div class="stat-num">4th</div>
-      <div class="stat-info"><div class="stat-name">TECHNOVATE 2025</div><div class="stat-sub">Software Project Competition</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-tag reveal">Skills & Stack</div>
-  <h2 class="section-title reveal reveal-d1">What I <em>work</em> with</h2>
-  <div class="skills-layout">
-
-    <div class="skill-group reveal">
-      <div class="skill-group-title">Languages</div>
-      <div class="skill-group-sub">Core Programming</div>
-      <div class="skill-pills">
-        <span class="pill done">Python</span>
-        <span class="pill done">SQL</span>
-        <span class="pill done">HTML</span>
-        <span class="pill done">CSS</span>
-        <span class="pill learning">JavaScript ↗</span>
+  <section id="about">
+    <h2>About Me</h2>
+    <hr>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm a final-year Computer Engineering student at Ramrao Adik Institute of Technology, Navi Mumbai, with a minor in Data Science. I'm currently interning at QSpiders as a Python Full Stack trainee, where I've completed SQL and am progressing through Python, Web Technologies, and Django.</p>
+        <p>Outside of academics, I serve as the Event Managing Head at ISTE RAIT, where I've led workshops, coordinated large-scale events, and addressed 400+ first-year students. I'm actively seeking full-time software roles for the 2026 placement season.</p>
+      </div>
+      <div class="about-info">
+        <table>
+          <tr><td class="info-label">College</td><td>Ramrao Adik Institute of Technology</td></tr>
+          <tr><td class="info-label">Degree</td><td>B.Tech CSE + Minor in Data Science</td></tr>
+          <tr><td class="info-label">CGPA</td><td>7.21 / 10</td></tr>
+          <tr><td class="info-label">Location</td><td>Navi Mumbai, India</td></tr>
+          <tr><td class="info-label">Email</td><td><a href="mailto:utkarshmishra7106@gmail.com">utkarshmishra7106@gmail.com</a></td></tr>
+          <tr><td class="info-label">LinkedIn</td><td><a href="https://linkedin.com/in/utkarshmishra7106" target="_blank">utkarshmishra7106</a></td></tr>
+          <tr><td class="info-label">GitHub</td><td><a href="https://github.com/UtkarshMishra7106" target="_blank">UtkarshMishra7106</a></td></tr>
+        </table>
+        <p class="social-note">* LinkedIn &amp; GitHub profiles being set up</p>
       </div>
     </div>
+  </section>
 
-    <div class="skill-group reveal reveal-d1">
-      <div class="skill-group-title">QSpiders Training</div>
-      <div class="skill-group-sub">Current Internship Progress</div>
-      <div class="intern-progress">
-        <div class="prog-item">
-          <div class="prog-label">SQL <span>Completed ✓</span></div>
-          <div class="prog-bar"><div class="prog-fill" style="--pct:100%"></div></div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <hr>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript <span class="badge-learning">Learning</span></li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Tools & Platforms</h3>
+        <ul>
+          <li>Git</li>
+          <li>Docker</li>
+          <li>Oracle SQL Plus</li>
+          <li>Power BI</li>
+          <li>AWS Cloud</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Core Concepts</h3>
+        <ul>
+          <li>Data Structures</li>
+          <li>OOP</li>
+          <li>Database Design</li>
+          <li>Data Analysis</li>
+          <li>Machine Learning Basics</li>
+          <li>Cloud Computing</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>QSpiders Training <span class="badge-active">Active</span></h3>
+        <ul>
+          <li>SQL <span class="badge-done">Done</span></li>
+          <li>Python <span class="badge-progress">In Progress</span></li>
+          <li>Web Tech — HTML, CSS, JS, ReactJS <span class="badge-progress">In Progress</span></li>
+          <li>Django <span class="badge-soon">Soon</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience & Leadership</h2>
+    <hr>
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <h3>Python Full Stack Intern</h3>
+          <span class="exp-org">QSpiders</span>
         </div>
-        <div class="prog-item">
-          <div class="prog-label">Python <span>~3 weeks left</span></div>
-          <div class="prog-bar"><div class="prog-fill" style="--pct:70%"></div></div>
-        </div>
-        <div class="prog-item">
-          <div class="prog-label">Web Tech (CSS) <span>In progress</span></div>
-          <div class="prog-bar"><div class="prog-fill" style="--pct:45%"></div></div>
-        </div>
-        <div class="prog-item">
-          <div class="prog-label">Django <span>Starting soon</span></div>
-          <div class="prog-bar"><div class="prog-fill" style="--pct:5%"></div></div>
-        </div>
-        <div class="prog-item">
-          <div class="prog-label">ReactJS <span>Upcoming</span></div>
-          <div class="prog-bar"><div class="prog-fill" style="--pct:5%"></div></div>
-        </div>
+        <span class="exp-date">2025 – Present</span>
       </div>
-    </div>
-
-    <div class="skill-group reveal reveal-d2">
-      <div class="skill-group-title">Tools & Platforms</div>
-      <div class="skill-group-sub">Dev Environment</div>
-      <div class="skill-pills">
-        <span class="pill done">Git</span>
-        <span class="pill done">Docker</span>
-        <span class="pill done">Oracle SQL Plus</span>
-        <span class="pill done">Power BI</span>
-        <span class="pill done">AWS Cloud</span>
-      </div>
-    </div>
-
-    <div class="skill-group reveal reveal-d3">
-      <div class="skill-group-title">Core Concepts</div>
-      <div class="skill-group-sub">Foundations</div>
-      <div class="skill-pills">
-        <span class="pill done">Data Structures</span>
-        <span class="pill done">OOP</span>
-        <span class="pill done">Database Design</span>
-        <span class="pill done">Data Analysis</span>
-        <span class="pill done">ML Basics</span>
-        <span class="pill done">Cloud Computing</span>
-        <span class="pill learning">Backend Dev ↗</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-tag reveal">Experience & Leadership</div>
-  <h2 class="section-title reveal reveal-d1">Where I've <em>contributed</em></h2>
-  <div class="exp-grid">
-
-    <div class="exp-card reveal">
-      <div class="exp-type">Internship</div>
-      <div class="exp-org">QSpiders</div>
-      <div class="exp-role">Python Full Stack Intern</div>
-      <div class="exp-date">2025 – Present</div>
-      <ul class="exp-bullets">
-        <li>Structured training in Python, SQL, and Web Technologies</li>
-        <li>Building backend logic and database-driven applications</li>
+      <ul>
+        <li>Undergoing structured training in Python, SQL, and Web Technologies</li>
+        <li>Building backend logic and database-driven applications using relational databases</li>
         <li>SQL module completed; currently progressing through Python and CSS</li>
         <li>Django and ReactJS modules upcoming</li>
       </ul>
     </div>
-
-    <div class="exp-card reveal reveal-d1">
-      <div class="exp-type">Leadership</div>
-      <div class="exp-org">ISTE RAIT</div>
-      <div class="exp-role">Event Managing Head</div>
-      <div class="exp-date">July 2025 – June 2026</div>
-      <ul class="exp-bullets">
+    <div class="exp-item">
+      <div class="exp-header">
+        <div>
+          <h3>Event Managing Head</h3>
+          <span class="exp-org">ISTE RAIT</span>
+        </div>
+        <span class="exp-date">July 2025 – June 2026</span>
+      </div>
+      <ul>
         <li>Addressed 400+ first-year students at college orientation events</li>
         <li>Conducted Python and SQL workshops for 40+ participants each</li>
         <li>Led cross-committee coordination and end-to-end event logistics</li>
         <li>Managed budgeting, scheduling, and on-ground execution of technical events</li>
       </ul>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-tag reveal">Projects</div>
-  <h2 class="section-title reveal reveal-d1">Things I've <em>built</em></h2>
-  <div class="projects-list">
-
-    <div class="project-row reveal">
-      <div class="project-num">01</div>
-      <div class="project-info">
-        <div class="project-name">SportMatrix</div>
-        <div class="project-desc">AI-powered football performance analytics system. Used TOPSIS algorithm to rank players across metrics and trained a Decision Tree model to predict optimal formations. Built an interactive dashboard with real-time visualizations.</div>
-        <div class="project-tags">
-          <span class="ptag">Python</span>
-          <span class="ptag">Machine Learning</span>
-          <span class="ptag">Matplotlib</span>
-          <span class="ptag">TOPSIS</span>
-          <span class="ptag">Decision Tree</span>
-        </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <hr>
+    <div class="project-item">
+      <div class="project-header">
+        <h3>SportMatrix — AI-Powered Football Performance Analysis</h3>
+        <span class="badge-award">🏆 4th Place · TECHNOVATE 2025</span>
       </div>
-      <div class="project-award">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
-        4th Place<br>TECHNOVATE 2025
+      <p>Built a football performance analytics system using Python. Implemented the TOPSIS algorithm to rank players across multiple performance metrics. Trained a Decision Tree model to predict optimal team formations. Developed an interactive dashboard with real-time visualizations using Matplotlib.</p>
+      <div class="project-tags">
+        <span>Python</span><span>Machine Learning</span><span>Matplotlib</span><span>TOPSIS</span><span>Decision Tree</span>
       </div>
     </div>
-
-    <div class="project-row reveal reveal-d1">
-      <div class="project-num">02</div>
-      <div class="project-info">
-        <div class="project-name">ExploreEcho</div>
-        <div class="project-desc">Travel recommendation system filtering destinations by location, budget, and season using a rule-based engine. Rendered dynamic suggestions with Flask and Jinja templates.</div>
-        <div class="project-tags">
-          <span class="ptag">Python</span>
-          <span class="ptag">Jinja</span>
-          <span class="ptag">HTML</span>
-          <span class="ptag">CSS</span>
-        </div>
+    <div class="project-item">
+      <div class="project-header">
+        <h3>ExploreEcho — Travel Recommendation System</h3>
+        <span class="project-date">April 2024</span>
       </div>
-      <div class="project-award" style="color:var(--muted)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
-        April 2024
+      <p>Developed a rule-based recommendation system filtering travel destinations by location, budget, and season. Rendered dynamic travel suggestions using Jinja templates.</p>
+      <div class="project-tags">
+        <span>Python</span><span>Jinja</span><span>HTML</span><span>CSS</span>
       </div>
     </div>
-
-    <div class="project-row reveal reveal-d2">
-      <div class="project-num">03</div>
-      <div class="project-info">
-        <div class="project-name">MedCare</div>
-        <div class="project-desc">Responsive first-aid web application providing step-by-step medical guidance with real-time search functionality for quick instruction retrieval.</div>
-        <div class="project-tags">
-          <span class="ptag">HTML</span>
-          <span class="ptag">Tailwind CSS</span>
-          <span class="ptag">JavaScript</span>
-        </div>
+    <div class="project-item">
+      <div class="project-header">
+        <h3>MedCare — First Aid Assistance Web App</h3>
+        <span class="project-date">October 2023</span>
       </div>
-      <div class="project-award" style="color:var(--muted)">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
-        October 2023
+      <p>Built a responsive first-aid web application providing step-by-step medical guidance. Implemented real-time search functionality for quick instruction retrieval.</p>
+      <div class="project-tags">
+        <span>HTML</span><span>Tailwind CSS</span><span>JavaScript</span>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <hr>
+    <p>I'm open to internship opportunities, collaborations, and full-time roles for 2026 placements. Feel free to reach out.</p>
+    <br>
+    <table class="contact-table">
+      <tr>
+        <td class="info-label">Email</td>
+        <td><a href="mailto:utkarshmishra7106@gmail.com">utkarshmishra7106@gmail.com</a></td>
+      </tr>
+      <tr>
+        <td class="info-label">LinkedIn</td>
+        <td><a href="https://linkedin.com/in/utkarshmishra7106" target="_blank">linkedin.com/in/utkarshmishra7106</a></td>
+      </tr>
+      <tr>
+        <td class="info-label">GitHub</td>
+        <td><a href="https://github.com/UtkarshMishra7106" target="_blank">github.com/UtkarshMishra7106</a></td>
+      </tr>
+    </table>
+  </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-tag reveal">Contact</div>
-  <h2 class="reveal">Let's <em>connect</em></h2>
-  <p class="reveal reveal-d1">Open to internship opportunities, collaborations, and conversations. Currently seeking full-time roles for 2026 placements.</p>
-  <div class="contact-grid reveal reveal-d2">
-    <a href="mailto:utkarshmishra7106@gmail.com" class="contact-chip">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      utkarshmishra7106@gmail.com
-    </a>
+  <footer>
+    <p>© 2026 Utkarsh Mishra &nbsp;·&nbsp; B.Tech CSE · RAIT, Navi Mumbai</p>
+  </footer>
 
-    <a href="https://linkedin.com/in/utkarshmishra7106" target="_blank" class="contact-chip">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      LinkedIn
-    </a>
-    <a href="https://github.com/UtkarshMishra7106" target="_blank" class="contact-chip">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
-      GitHub
-    </a>
-  </div>
-  <p class="social-note reveal reveal-d3">LinkedIn & GitHub profiles being set up — links will be active soon</p>
-</section>
-
-<footer>
-  <span>© 2026 Utkarsh Mishra</span>
-  <span>B.Tech CSE · RAIT · Navi Mumbai</span>
-  <span>Built with care</span>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
