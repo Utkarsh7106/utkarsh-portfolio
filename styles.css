@@ -88,6 +88,17 @@ nav.scrolled {
 
 .nav-right { display: flex; align-items: center; gap: 20px; }
 
+/* Resume button in nav */
+.btn-resume {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--accent); text-decoration: none;
+  border: 1px solid var(--border2);
+  padding: 7px 16px; border-radius: 2px;
+  transition: border-color 0.2s, background 0.2s, color 0.2s;
+}
+.btn-resume:hover { border-color: var(--accent); background: var(--accentlt); }
+
 /* Theme toggle */
 .theme-toggle {
   display: flex; align-items: center; gap: 10px;
@@ -122,7 +133,6 @@ nav.scrolled {
   overflow: hidden;
 }
 
-/* Decorative background circles */
 #hero::before {
   content: '';
   position: absolute;
@@ -219,7 +229,7 @@ nav.scrolled {
 }
 .btn-outline:hover { border-color: var(--accent); }
 
-/* HERO RIGHT — Photo */
+/* HERO RIGHT */
 .hero-right {
   display: flex; align-items: center; justify-content: center;
   padding: 80px 64px 80px 32px;
@@ -232,7 +242,6 @@ nav.scrolled {
   width: 340px; height: 420px;
 }
 
-/* Decorative offset border */
 .photo-frame::before {
   content: '';
   position: absolute;
@@ -262,31 +271,12 @@ nav.scrolled {
   border: 1px solid var(--border);
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  gap: 12px;
 }
 
-/* If user adds an actual <img> replace the placeholder */
 .photo-inner img {
   width: 100%; height: 100%;
   object-fit: cover; object-position: 38% 8%;
   display: block;
-}
-
-.photo-placeholder {
-  display: flex; flex-direction: column;
-  align-items: center; gap: 12px; color: var(--muted);
-}
-.photo-placeholder-icon {
-  width: 72px; height: 72px; border-radius: 50%;
-  background: var(--surface2);
-  border: 2px dashed var(--border2);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 2rem;
-}
-.photo-placeholder p {
-  font-size: 0.75rem; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--muted);
-  font-family: 'DM Mono', monospace;
 }
 
 .photo-badge {
@@ -307,7 +297,7 @@ nav.scrolled {
   background: var(--surface2);
   overflow: hidden; padding: 14px 0;
 }
-.marquee-track { display: flex; white-space: nowrap; animation: marquee 24s linear infinite; }
+.marquee-track { display: flex; white-space: nowrap; animation: marquee 32s linear infinite; }
 .marquee-item {
   padding: 0 32px;
   font-family: 'DM Mono', monospace;
@@ -362,7 +352,6 @@ section { padding: 110px 64px; }
 .meta-val a { color: var(--accent2); text-decoration: none; }
 .meta-val a:hover { text-decoration: underline; }
 
-/* About right: stats */
 .about-stats { display: flex; flex-direction: column; gap: 2px; }
 .stat-row {
   background: var(--card);
@@ -428,9 +417,8 @@ section { padding: 110px 64px; }
 }
 .pill.done { background: var(--surface2); }
 
-/* Progress for internship */
+/* Progress bars */
 .intern-progress { margin-top: 24px; display: flex; flex-direction: column; gap: 14px; }
-.prog-item {}
 .prog-label {
   display: flex; justify-content: space-between;
   font-size: 0.78rem; color: var(--text2); margin-bottom: 6px;
@@ -505,20 +493,44 @@ section { padding: 110px 64px; }
 /* ===== PROJECTS ===== */
 #projects { border-top: 1px solid var(--border); }
 
+/* Filter tabs */
+.project-filters {
+  display: flex; gap: 8px; margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 8px 20px; border-radius: 2px; cursor: pointer;
+  border: 1px solid var(--border2);
+  background: transparent; color: var(--muted);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+.filter-btn:hover { border-color: var(--accent2); color: var(--accent2); }
+.filter-btn.active {
+  background: var(--accent); border-color: var(--accent);
+  color: #fff;
+}
+
+/* Project list */
 .projects-list { display: flex; flex-direction: column; gap: 2px; }
 
 .project-row {
   background: var(--card);
   border: 1px solid var(--border);
-  padding: 36px 40px;
+  padding: 32px 40px;
   display: grid; grid-template-columns: 56px 1fr auto;
   gap: 28px; align-items: center;
-  transition: background 0.3s, border-color 0.3s;
-  border-bottom: none; text-decoration: none; color: inherit;
-  cursor: default;
+  transition: background 0.3s, border-color 0.3s, opacity 0.3s, transform 0.3s;
+  border-bottom: none;
 }
 .project-row:last-child { border-bottom: 1px solid var(--border); }
 .project-row:hover { background: var(--surface2); border-color: var(--border2); }
+
+/* Hidden state when filtered out */
+.project-row.hidden {
+  display: none;
+}
 
 .project-num {
   font-family: 'Cormorant Garamond', serif;
@@ -529,7 +541,30 @@ section { padding: 110px 64px; }
 [data-theme="dark"] .project-num { color: var(--border2); }
 .project-row:hover .project-num { color: var(--accent); }
 
-.project-info {}
+.project-meta-top {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 8px;
+}
+
+/* Category badge */
+.project-cat-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 999px;
+}
+.project-cat-badge.academic  { background: var(--surface2); color: var(--muted); border: 1px solid var(--border2); }
+.project-cat-badge.internship { background: var(--accentlt); color: var(--accent); border: 1px solid var(--accent); }
+.project-cat-badge.personal  { background: var(--surface2); color: var(--accent2); border: 1px solid var(--accent2); }
+
+/* Award inline */
+.project-award-inline {
+  display: flex; align-items: center; gap: 6px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent2);
+}
+.project-award-inline svg { width: 12px; height: 12px; }
+
 .project-name {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.4rem; font-weight: 700; margin-bottom: 6px;
@@ -547,14 +582,25 @@ section { padding: 110px 64px; }
 }
 .project-row:hover .ptag { color: var(--accent2); border-color: var(--accent2); }
 
-.project-award {
+/* Project links column */
+.project-links {
   display: flex; flex-direction: column; align-items: center;
-  gap: 6px; color: var(--accent2);
-  font-family: 'DM Mono', monospace;
-  font-size: 0.6rem; letter-spacing: 0.08em;
-  text-transform: uppercase; text-align: center; min-width: 70px;
+  gap: 8px; min-width: 90px;
 }
-.project-award svg { width: 28px; height: 28px; }
+.proj-link {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent2); text-decoration: none;
+  border: 1px solid var(--border2);
+  padding: 6px 14px; border-radius: 2px;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+.proj-link:hover { border-color: var(--accent2); background: var(--accentlt); }
+.proj-link.private {
+  color: var(--muted); border-color: var(--border);
+  cursor: default; pointer-events: none;
+}
 
 /* ===== CONTACT ===== */
 #contact {
@@ -603,13 +649,6 @@ section { padding: 110px 64px; }
 .contact-chip:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-3px); }
 .contact-chip svg { width: 16px; height: 16px; flex-shrink: 0; }
 
-.social-note {
-  margin-top: 32px;
-  font-family: 'DM Mono', monospace;
-  font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--muted); position: relative;
-}
-
 /* ===== FOOTER ===== */
 footer {
   background: var(--bg2);
@@ -636,6 +675,7 @@ footer {
 @media (max-width: 960px) {
   nav { padding: 18px 28px; }
   .nav-links { display:none; }
+  .btn-resume { display:none; }
   #hero { grid-template-columns:1fr; padding-top:90px; }
   .hero-left { padding:48px 28px 32px; }
   .hero-right { padding:24px 28px 64px; justify-content:flex-start; }
@@ -644,7 +684,8 @@ footer {
   #about { grid-template-columns:1fr; gap:48px; }
   .skills-layout { grid-template-columns:1fr; }
   .exp-grid { grid-template-columns:1fr; }
-  .project-row { grid-template-columns:1fr; }
+  .project-row { grid-template-columns:1fr; gap:16px; }
   .project-num { display:none; }
+  .project-links { align-items: flex-start; }
   footer { flex-direction:column; gap:12px; text-align:center; }
 }
