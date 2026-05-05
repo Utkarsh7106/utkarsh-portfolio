@@ -126,6 +126,7 @@ nav.scrolled {
 /* ===== HERO ===== */
 #hero {
   min-height: 100vh;
+  align-items: center;
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   padding-top: 80px;
@@ -146,7 +147,7 @@ nav.scrolled {
 .hero-left {
   display: flex; flex-direction: column;
   justify-content: center;
-  padding: 80px 64px;
+  padding: 40px 64px;
   position: relative; z-index: 2;
 }
 
@@ -371,6 +372,65 @@ section { padding: 110px 64px; }
 .stat-name { font-size: 0.88rem; color: var(--text2); font-weight: 500; }
 .stat-sub { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.08em; color: var(--muted); margin-top: 4px; }
 
+/* ===== CURRENTLY CARD ===== */
+.currently-card {
+  display: flex; flex-direction: column; gap: 2px;
+  align-self: start;
+}
+
+.currently-block {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 28px 32px;
+  border-bottom: none;
+  transition: background 0.3s;
+}
+.currently-block:last-child { border-bottom: 1px solid var(--border); }
+.currently-block:hover { background: var(--surface2); }
+
+.currently-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent2); margin-bottom: 16px;
+  display: flex; align-items: center; gap: 8px;
+}
+.currently-icon { font-size: 0.85rem; }
+
+.currently-list {
+  list-style: none; display: flex; flex-direction: column; gap: 10px;
+}
+.currently-list li {
+  display: flex; flex-direction: column; gap: 2px;
+}
+.currently-project {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 600; color: var(--text);
+}
+.currently-desc {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.currently-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.cpill {
+  padding: 5px 14px;
+  border: 1px solid var(--border2);
+  font-size: 0.75rem; color: var(--text2);
+  border-radius: 999px;
+  background: var(--surface2);
+}
+.cpill.muted-pill {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem; letter-spacing: 0.06em;
+  color: var(--muted); background: transparent;
+  border-color: var(--border);
+}
+
+.currently-reading {
+  display: flex; flex-direction: column; gap: 2px;
+}
+
 /* ===== SKILLS ===== */
 #skills { background: var(--bg); border-top: 1px solid var(--border); }
 
@@ -513,7 +573,16 @@ section { padding: 110px 64px; }
 }
 
 /* Project list */
-.projects-list { display: flex; flex-direction: column; gap: 2px; }
+.projects-list {
+  display: flex; flex-direction: column; gap: 2px;
+  max-height: 640px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border2) transparent;
+}
+.projects-list::-webkit-scrollbar { width: 4px; }
+.projects-list::-webkit-scrollbar-track { background: transparent; }
+.projects-list::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 999px; }
 
 .project-row {
   background: var(--card);
@@ -521,7 +590,7 @@ section { padding: 110px 64px; }
   padding: 32px 40px;
   display: grid; grid-template-columns: 56px 1fr auto;
   gap: 28px; align-items: center;
-  transition: background 0.3s, border-color 0.3s, opacity 0.3s, transform 0.3s;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s, transform 0.15s;
   border-bottom: none;
 }
 .project-row:last-child { border-bottom: 1px solid var(--border); }

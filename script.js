@@ -8,9 +8,9 @@
 const PROGRESS_DATA = {
   sql:    { pct: 100, label: 'Completed ✓' },
   python: { pct: 100, label: 'Completed ✓' },
-  powerbi:{ pct: 20,  label: 'In Progress' },
-  excel:  { pct: 0,  label: 'Starting soon' },
-  dslibs: { pct: 0,  label: 'Starting soon' },
+  powerbi:{ pct: 60,  label: 'In Progress' },
+  excel:  { pct: 40,  label: 'In Progress' },
+  dslibs: { pct: 20,  label: 'Starting soon' },
 };
 // ============================================================
 
