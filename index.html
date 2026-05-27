@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utkarsh Mishra — Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">U.M.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <!-- PLACEHOLDER: Replace href with your raw GitHub resume URL -->
+    <!-- Example: https://raw.githubusercontent.com/Utkarsh7106/utkarsh-portfolio/main/UtkarshMishra_CV.pdf -->
+    <a href="https://drive.google.com/file/d/1Zknf1WszWs0QDo78dIio1Jn85bJ_aY8e/view?usp=sharing" target="_blank" class="btn-resume">Resume ↗</a>
+    <div class="theme-toggle" id="themeToggle">
+      <span class="toggle-icon">☀️</span>
+      <div class="toggle-track"><div class="toggle-thumb"></div></div>
+      <span class="toggle-icon">🌙</span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Final Year · Computer Engineering</p>
+    <h1 class="hero-name">
+      <span class="first">Utkarsh</span>
+      <span class="last">Mishra</span>
+    </h1>
+    <p class="hero-title">
+      Data Science Trainee
+      <span class="title-dot">·</span>
+      Full Stack Developer
+    </p>
+    <p class="hero-location">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+      Mumbai, India · Ramrao Adik Institute of Technology
+    </p>
+    <p class="hero-desc">
+      Computer Engineering student with hands-on experience in Python, SQL, and web development — building data-driven projects and leading technical initiatives on campus.
+    </p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-main">View Projects</a>
+      <a href="#contact" class="btn-outline">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="photo-frame">
+      <div class="photo-inner">
+        <img src="Utkarsh_Image.jpeg" alt="Utkarsh Mishra">
+      </div>
+      <div class="photo-badge">
+        <strong>7.53</strong>
+        CGPA · B.Tech CE
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <div class="marquee-item">Python Full Stack</div>
+    <div class="marquee-item">Data Science</div>
+    <div class="marquee-item">Oracle SQL</div>
+    <div class="marquee-item">Data Analysis</div>
+    <div class="marquee-item">Machine Learning</div>
+    <div class="marquee-item">Flask</div>
+    <div class="marquee-item">ISTE RAIT</div>
+    <div class="marquee-item">QSpiders Trainee</div>
+    <div class="marquee-item">Data Science Trainee</div>
+    <div class="marquee-item">TECHNOVATE 2025</div>
+    <div class="marquee-item">Minor · Data Science</div>
+    <div class="marquee-item">AWS Cloud</div>
+    <div class="marquee-item">Pandas · NumPy</div>
+    <div class="marquee-item">Power BI</div>
+    <!-- dupe for seamless loop -->
+    <div class="marquee-item">Python Full Stack</div>
+    <div class="marquee-item">Data Science</div>
+    <div class="marquee-item">Oracle SQL</div>
+    <div class="marquee-item">Data Analysis</div>
+    <div class="marquee-item">Machine Learning</div>
+    <div class="marquee-item">Flask</div>
+    <div class="marquee-item">ISTE RAIT</div>
+    <div class="marquee-item">QSpiders Trainee</div>
+    <div class="marquee-item">Data Science Trainee</div>
+    <div class="marquee-item">TECHNOVATE 2025</div>
+    <div class="marquee-item">Minor · Data Science</div>
+    <div class="marquee-item">AWS Cloud</div>
+    <div class="marquee-item">Pandas · NumPy</div>
+    <div class="marquee-item">Power BI</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-body reveal">
+    <div class="section-tag">About Me</div>
+    <h2 class="section-title">Turning <em>data</em> into decisions, code into products</h2>
+    <p>Computer Engineering student at RAIT, Mumbai with a minor in Data Science. I build data-driven projects and have hands-on experience across Python, SQL, and web development — currently training in Data Science at QSpiders.</p>
+    <p>Beyond code, I served as Event Managing Head at ISTE RAIT, having addressed 400+ students, organized technical workshops, and coordinated large-scale campus events end-to-end including Techfest 2026.</p>
+    <p><strong style="color:var(--accent2)">Available to join immediately.</strong></p>
+    <div class="about-meta">
+      <div class="meta-row"><span class="meta-label">College</span><span class="meta-val">Ramrao Adik Institute of Technology</span></div>
+      <div class="meta-row"><span class="meta-label">Degree</span><span class="meta-val">B.Tech CE + Minor in Data Science</span></div>
+      <div class="meta-row"><span class="meta-label">Location</span><span class="meta-val">Mumbai, India</span></div>
+      <div class="meta-row"><span class="meta-label">Email</span><span class="meta-val"><a href="mailto:nt6utkarshmishra@gmail.com">nt6utkarshmishra@gmail.com</a></span></div>
+      <div class="meta-row"><span class="meta-label">LinkedIn</span><span class="meta-val"><a href="https://linkedin.com/in/utkarshmishra7106" target="_blank">utkarshmishra7106</a></span></div>
+      <div class="meta-row"><span class="meta-label">GitHub</span><span class="meta-val"><a href="https://github.com/Utkarsh7106" target="_blank">Utkarsh7106</a></span></div>
+    </div>
+  </div>
+
+  <div class="currently-card reveal reveal-d1">
+    <div class="currently-block">
+      <div class="currently-label">
+        <span class="currently-icon">⚒</span> Working on
+      </div>
+      <ul class="currently-list" id="working-on-list">
+        <!-- Populated dynamically from status.json by script.js -->
+      </ul>
+    </div>
+    <div class="currently-block">
+      <div class="currently-label">
+        <span class="currently-icon">📚</span> Learning
+      </div>
+      <div class="currently-pills" id="learning-pills">
+        <!-- Populated dynamically from status.json by script.js -->
+      </div>
+    </div>
+    <div class="currently-block">
+      <div class="currently-label">
+        <span class="currently-icon">📖</span> Reading
+      </div>
+      <div class="currently-reading">
+        <span class="currently-project">Lord of Mysteries</span>
+        <span class="currently-desc">Web Novel</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-tag reveal">Skills & Stack</div>
+  <h2 class="section-title reveal reveal-d1">What I <em>work</em> with</h2>
+  <div class="skills-layout">
+
+    <div class="skill-group reveal">
+      <div class="skill-group-title">Languages</div>
+      <div class="skill-group-sub">Core Programming</div>
+      <div class="skill-pills">
+        <span class="pill done">Python</span>
+        <span class="pill done">SQL</span>
+        <span class="pill done">HTML</span>
+        <span class="pill done">CSS</span>
+        <span class="pill learning">JavaScript ↗</span>
+      </div>
+    </div>
+
+    <!-- QSpiders training progress bars.
+         To update percentages in future: edit the PROGRESS_DATA object in script.js — no need to touch this HTML. -->
+    <div class="skill-group reveal reveal-d1">
+      <div class="skill-group-title">QSpiders Training</div>
+      <div class="skill-group-sub">Data Science Track · Jan 2026 – Present</div>
+      <div class="intern-progress">
+        <div class="prog-item">
+          <div class="prog-label">SQL <span>Completed ✓</span></div>
+          <div class="prog-bar"><div class="prog-fill" data-prog="sql"></div></div>
+        </div>
+        <div class="prog-item">
+          <div class="prog-label">Python <span id="prog-label-python"></span></div>
+          <div class="prog-bar"><div class="prog-fill" data-prog="python"></div></div>
+        </div>
+        <div class="prog-item">
+          <div class="prog-label">Power BI <span id="prog-label-powerbi"></span></div>
+          <div class="prog-bar"><div class="prog-fill" data-prog="powerbi"></div></div>
+        </div>
+        <div class="prog-item">
+          <div class="prog-label">Excel <span id="prog-label-excel"></span></div>
+          <div class="prog-bar"><div class="prog-fill" data-prog="excel"></div></div>
+        </div>
+        <div class="prog-item">
+          <div class="prog-label">Python DS Libraries <span id="prog-label-dslibs"></span></div>
+          <div class="prog-bar"><div class="prog-fill" data-prog="dslibs"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-group reveal reveal-d2">
+      <div class="skill-group-title">Data Science</div>
+      <div class="skill-group-sub">Libraries & Tools</div>
+      <div class="skill-pills">
+        <span class="pill done">Pandas</span>
+        <span class="pill done">NumPy</span>
+        <span class="pill done">Matplotlib</span>
+        <span class="pill done">Power BI</span>
+        <span class="pill done">Excel</span>
+        <span class="pill learning">Seaborn ↗</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal reveal-d2">
+      <div class="skill-group-title">Tools & Platforms</div>
+      <div class="skill-group-sub">Dev Environment</div>
+      <div class="skill-pills">
+        <span class="pill done">Git</span>
+        <span class="pill done">Docker</span>
+        <span class="pill done">Oracle SQL Plus</span>
+        <span class="pill done">AWS Cloud</span>
+        <span class="pill done">VS Code</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal reveal-d3">
+      <div class="skill-group-title">Web & Backend</div>
+      <div class="skill-group-sub">Full Stack</div>
+      <div class="skill-pills">
+        <span class="pill done">Flask</span>
+        <span class="pill done">MySQL</span>
+        <span class="pill done">ReactJS</span>
+        <span class="pill done">REST APIs</span>
+        <span class="pill learning">JWT Auth ↗</span>
+      </div>
+    </div>
+
+    <div class="skill-group reveal reveal-d3">
+      <div class="skill-group-title">Core Concepts</div>
+      <div class="skill-group-sub">Foundations</div>
+      <div class="skill-pills">
+        <span class="pill done">Data Structures</span>
+        <span class="pill done">OOP</span>
+        <span class="pill done">Database Design</span>
+        <span class="pill done">Data Analysis</span>
+        <span class="pill done">ML Basics</span>
+        <span class="pill done">Cloud Computing</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-tag reveal">Experience & Leadership</div>
+  <h2 class="section-title reveal reveal-d1">Where I've <em>contributed</em></h2>
+  <div class="exp-grid">
+
+    <div class="exp-card reveal">
+      <div class="exp-type">Internship</div>
+      <div class="exp-org">QSpiders</div>
+      <div class="exp-role">Data Science Trainee</div>
+      <div class="exp-date">Jan 2026 – Present</div>
+      <ul class="exp-bullets">
+        <li>Training in SQL — joins, aggregations, subqueries, and window functions — and Python, with ongoing modules in Power BI, Excel, and data libraries: Pandas, NumPy, Matplotlib, and Seaborn</li>
+        <li>Queried and analyzed structured datasets to extract insights and generate reports</li>
+        <li>Working across the full data pipeline — from raw data extraction to final report generation</li>
+      </ul>
+    </div>
+
+    <div class="exp-card reveal reveal-d1">
+      <div class="exp-type">Internship</div>
+      <div class="exp-org">Unique Associates</div>
+      <div class="exp-role">Data Analyst Intern</div>
+      <div class="exp-date">Aug 2025 – Dec 2025</div>
+      <ul class="exp-bullets">
+        <li>Analyzed industrial real estate market data across Navi Mumbai zones; built reports tracking pricing trends and transaction volumes for internal decision-making</li>
+        <li>Maintained and organized client documentation records across 50+ property files, reducing retrieval time significantly</li>
+        <li>Prepared structured Excel reports summarizing zone-wise property metrics reviewed directly by the proprietor</li>
+      </ul>
+    </div>
+
+    <div class="exp-card reveal reveal-d1">
+      <div class="exp-type">Leadership</div>
+      <div class="exp-org">ISTE RAIT</div>
+      <div class="exp-role">Event Managing Head</div>
+      <div class="exp-date">Jul 2025 – Jun 2026</div>
+      <ul class="exp-bullets">
+        <li>Addressed 400+ first-year students at college orientation events</li>
+        <li>Conducted solo technical workshops on Web Development and Python — 80+ attendees each</li>
+        <li>Led end-to-end planning and execution of Techfest 2026 — coordinated 5 events across departments</li>
+        <li>Managed cross-committee coordination, budgeting, scheduling, and on-ground logistics</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-tag reveal">Projects</div>
+  <h2 class="section-title reveal reveal-d1">Things I've <em>built</em></h2>
+
+  <!-- Project filter tabs -->
+  <div class="project-filters reveal reveal-d2">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="academic">Academic</button>
+    <button class="filter-btn" data-filter="personal">Personal</button>
+  </div>
+
+  <div class="projects-list">
+
+    <!-- 01 — EDUTRACK -->
+    <div class="project-row reveal" data-category="personal">
+      <div class="project-num">01</div>
+      <div class="project-info">
+        <div class="project-meta-top">
+          <span class="project-cat-badge personal">Personal</span>
+        </div>
+        <div class="project-name">EduTrack</div>
+        <div class="project-desc">End-to-end college education management system built with Flask, MySQL, and ReactJS. Led backend architecture and API development — role-based access for students, teachers, and admins with JWT authentication.</div>
+        <div class="project-tags">
+          <span class="ptag">Flask</span>
+          <span class="ptag">MySQL</span>
+          <span class="ptag">ReactJS</span>
+          <span class="ptag">JWT Auth</span>
+          <span class="ptag">REST API</span>
+          <span class="ptag">Python</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Utkarsh7106/Edutrack" target="_blank" class="proj-link">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- 02 — SPORTMATRIX -->
+    <div class="project-row reveal reveal-d1" data-category="academic">
+      <div class="project-num">02</div>
+      <div class="project-info">
+        <div class="project-meta-top">
+          <span class="project-cat-badge academic">Academic</span>
+          <span class="project-award-inline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+            4th · TECHNOVATE 2025
+          </span>
+        </div>
+        <div class="project-name">SportMatrix</div>
+        <div class="project-desc">AI-powered football performance analytics system. Used TOPSIS algorithm to rank players across metrics and trained a Decision Tree model to predict optimal formations. Built an interactive dashboard with real-time visualizations.</div>
+        <div class="project-tags">
+          <span class="ptag">Python</span>
+          <span class="ptag">Machine Learning</span>
+          <span class="ptag">Matplotlib</span>
+          <span class="ptag">TOPSIS</span>
+          <span class="ptag">Decision Tree</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Utkarsh7106/SportMatrix" target="_blank" class="proj-link">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- 03 — DROPIT -->
+    <div class="project-row reveal reveal-d2" data-category="personal">
+      <div class="project-num">03</div>
+      <div class="project-info">
+        <div class="project-meta-top">
+          <span class="project-cat-badge personal">Personal</span>
+        </div>
+        <div class="project-name">DropIt</div>
+        <div class="project-desc">Serverless P2P file transfer tool — no cloud, no upload, no backend. Open on two devices, enter the same room code, and files transfer directly browser-to-browser over WebRTC. Supports files up to 50 GB. Single HTML file, zero dependencies.</div>
+        <div class="project-tags">
+          <span class="ptag">WebRTC</span>
+          <span class="ptag">PeerJS</span>
+          <span class="ptag">JavaScript</span>
+          <span class="ptag">File System API</span>
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Utkarsh7106/DropIt" target="_blank" class="proj-link">GitHub ↗</a>
+        <a href="https://dropit-utk.netlify.app/" target="_blank" class="proj-link">Live ↗</a>
+      </div>
+    </div>
+
+    <!-- 04 — FACE TO COMIC -->
+    <div class="project-row reveal reveal-d3" data-category="personal">
+      <div class="project-num">04</div>
+      <div class="project-info">
+        <div class="project-meta-top">
+          <span class="project-cat-badge personal">Personal</span>
+        </div>
+        <div class="project-name">Face to Comic</div>
+        <div class="project-desc">Deep learning image translation system that converts real face photographs into comic-style art using a Pix2Pix cGAN. Trained on 10,000 paired face-comic images with a U-Net generator and PatchGAN discriminator. Deployed as a live Streamlit web app.</div>
+        <div class="project-tags">
+          <span class="ptag">PyTorch</span>
+          <span class="ptag">Pix2Pix GAN</span>
+          <span class="ptag">Deep Learning</span>
+          <span class="ptag">U-Net</span>
+          <span class="ptag">Streamlit</span>
+          <span class="ptag">Python</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Utkarsh7106/Face-to-Comic-Pix2Pix-GAN" target="_blank" class="proj-link">GitHub ↗</a>
+        <a href="https://comicface.streamlit.app/" target="_blank" class="proj-link">Live ↗</a>
+      </div>
+    </div>
+
+    <!-- 05 — EXPLOREECHO -->
+    <div class="project-row reveal" data-category="academic">
+      <div class="project-num">05</div>
+      <div class="project-info">
+        <div class="project-meta-top">
+          <span class="project-cat-badge academic">Academic</span>
+        </div>
+        <div class="project-name">ExploreEcho</div>
+        <div class="project-desc">Travel recommendation system filtering destinations by location, budget, and season using a rule-based engine. Rendered dynamic suggestions with Flask and Jinja templates.</div>
+        <div class="project-tags">
+          <span class="ptag">Python</span>
+          <span class="ptag">Flask</span>
+          <span class="ptag">Jinja</span>
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Utkarsh7106/ExploreEcho" target="_blank" class="proj-link">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- 06 — MEDCARE -->
+    <div class="project-row reveal reveal-d1" data-category="academic">
+      <div class="project-num">06</div>
+      <div class="project-info">
+        <div class="project-meta-top">
+          <span class="project-cat-badge academic">Academic</span>
+        </div>
+        <div class="project-name">MedCare</div>
+        <div class="project-desc">Responsive first-aid web application providing step-by-step medical guidance with real-time search functionality for quick instruction retrieval.</div>
+        <div class="project-tags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">Tailwind CSS</span>
+          <span class="ptag">JavaScript</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Utkarsh7106/MedCare" target="_blank" class="proj-link">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- 07 — PORTFOLIO WEBSITE -->
+    <div class="project-row reveal reveal-d2" data-category="personal">
+      <div class="project-num">07</div>
+      <div class="project-info">
+        <div class="project-meta-top">
+          <span class="project-cat-badge personal">Personal</span>
+        </div>
+        <div class="project-name">Portfolio Website</div>
+        <div class="project-desc">Personal developer portfolio built from scratch — clean warm aesthetic with dark mode, scroll animations, project filtering, and responsive design. Currently on V4.</div>
+        <div class="project-tags">
+          <span class="ptag">HTML</span>
+          <span class="ptag">CSS</span>
+          <span class="ptag">JavaScript</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Utkarsh7106/utkarsh-portfolio" target="_blank" class="proj-link">GitHub ↗</a>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         08 — CREDIT CARD FRAUD DETECTION
+         Uncomment this block once the repo is fully uploaded.
+         ============================================================
+
+    <div class="project-row reveal reveal-d3" data-category="academic">
+      <div class="project-num">08</div>
+      <div class="project-info">
+        <div class="project-meta-top">
+          <span class="project-cat-badge academic">Academic</span>
+        </div>
+        <div class="project-name">Credit Card Fraud Detection</div>
+        <div class="project-desc">Machine learning pipeline to detect fraudulent credit card transactions on a highly imbalanced dataset. Applied SMOTE for oversampling, trained and compared multiple classifiers, and evaluated using precision-recall metrics suited for imbalanced classes.</div>
+        <div class="project-tags">
+          <span class="ptag">Python</span>
+          <span class="ptag">Scikit-learn</span>
+          <span class="ptag">Pandas</span>
+          <span class="ptag">SMOTE</span>
+          <span class="ptag">Machine Learning</span>
+        </div>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Utkarsh7106/CreditCard-Fraud-Detection" target="_blank" class="proj-link">GitHub ↗</a>
+      </div>
+    </div>
+
+         ============================================================ -->
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-tag reveal">Contact</div>
+  <h2 class="reveal">Let's <em>connect</em></h2>
+  <p class="reveal reveal-d1">Actively looking for roles in Data Analytics, Data Engineering, and Data Science — open to Full Stack and AI/ML positions too. Based in Mumbai, open to relocation. <strong style="color:var(--accent2)">Available to join immediately.</strong></p>
+  <div class="contact-grid reveal reveal-d2">
+    <a href="mailto:nt6utkarshmishra@gmail.com" class="contact-chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      nt6utkarshmishra@gmail.com
+    </a>
+    <a href="https://linkedin.com/in/utkarshmishra7106" target="_blank" class="contact-chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/Utkarsh7106" target="_blank" class="contact-chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+      GitHub
+    </a>
+    <!-- PLACEHOLDER: Replace href with your raw GitHub resume URL -->
+    <a href="https://drive.google.com/file/d/1Zknf1WszWs0QDo78dIio1Jn85bJ_aY8e/view?usp=sharing" target="_blank" class="contact-chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      Resume
+    </a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Utkarsh Mishra</span>
+  <span>B.Tech CE · RAIT · Mumbai</span>
+  <span>Built with care</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

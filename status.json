@@ -1,0 +1,20 @@
+{
+  "working_on": [
+    {
+      "name": "PlotScope",
+      "desc": "Data Analytics Dashboard · Revamp — Phase 1 Planning"
+    },
+    {
+      "name": "EduTrack",
+      "desc": "Full-stack Education Management System · On Hold"
+    }
+  ],
+  "learning": [
+    "Power BI",
+    "Excel",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Seaborn"
+  ]
+}
