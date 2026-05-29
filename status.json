@@ -1,8 +1,16 @@
 {
   "working_on": [
     {
+      "name": "OpenDrop",
+      "desc": "Decentralized P2P File Transfer Revamp · Phase 3 Manual Writing"
+    },
+    {
+      "name": "PropertyLedger",
+      "desc": "Real Estate Registry & Valuation Revamp · Phase 3 Manual Writing"
+    },
+    {
       "name": "PlotScope",
-      "desc": "Data Analytics Dashboard · Revamp — Phase 1 Planning"
+      "desc": "Data Analytics Dashboard · Revamp — Phase 3 Documentation Pending"
     },
     {
       "name": "EduTrack",
